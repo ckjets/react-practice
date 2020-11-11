@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/**
+ * 関数コンポーネント
+ * 引数としてプロパティ 情報(props)を受け取り、
+ * 戻り値としてReact要素を返す
+ */
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
