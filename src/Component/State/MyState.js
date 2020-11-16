@@ -15,6 +15,10 @@ export default class MyState extends Component {
             current: new Date()
         };
 
+        // これはダメな例(値を変更する時はsetStateを用いる)
+        // ただし、コンストラクタの中では代入可能(ここはコンストラクタなのでOK)
+        this.state.current = new Date();
+
         // 3. 1000ミリ秒おきにState(current)を更新
         setInterval(()=>{
             this.setState({

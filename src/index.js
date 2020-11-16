@@ -13,6 +13,8 @@ import MyForm from './Component/MyForm/MyForm';
 import StateHook from './Component/Hook/StateHook';
 import EffectsHook from './Component/Hook/EffectsHook';
 import FriendEffectsHook from './Component/Hook/FriendEffectsHook';
+import CountUpSample from './Component/Hook/CountUpSample';
+
 {/** エントリポイント 
   index.jsでAppコンポーネントを呼び出す
   コンポーネントクラスのrenderメソッドが呼び出されて、出力が生成される
@@ -25,10 +27,11 @@ import FriendEffectsHook from './Component/Hook/FriendEffectsHook';
  */
 ReactDOM.render(
   <React.StrictMode>
-    <LoopParent></LoopParent>
+    {/* <LoopParent></LoopParent>
     <EventParent></EventParent>
     <MyForm></MyForm>
-    <StateHook/>
+    <StateHook/> */}
+    <CountUpSample></CountUpSample>
     
     {/* <App /> */}
     {/* <PropsMyParent></PropsMyParent> */}
